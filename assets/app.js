@@ -74,6 +74,10 @@ function buildCountryIndex() {
       color: colors[country.alliances.join(" + ")] || neutralFill
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
+
+  for (const country of state.countries) {
+    state.byIso.set(country.iso3, country);
+  }
 }
 
 function renderStatus() {
