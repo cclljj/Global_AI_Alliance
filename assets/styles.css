@@ -23,8 +23,10 @@ a {
 
 .hero {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(234, 244, 255, 0.76)),
-    url("../AI_Alliance.JPG") center / cover;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(234, 244, 255, 0.82)),
+    linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+  background-size: auto, 28px 28px, 28px 28px;
 }
 
 .status-panel,
