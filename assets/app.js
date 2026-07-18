@@ -7,6 +7,18 @@ const allianceFiles = [
   { key: "global_south", shortName: "Global South network", path: "global_south.json", colorKey: "globalSouth" }
 ];
 
+const wikipediaPages = {
+  pax_silica: [
+    { title: "Wikipedia — Pax Silica", url: "https://en.wikipedia.org/wiki/Pax_Silica" }
+  ],
+  waico: [
+    { title: "Wikipedia — World Artificial Intelligence Cooperation Organization", url: "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization" }
+  ],
+  global_south: [
+    { title: "Wikipedia — Global North and Global South (background)", url: "https://en.wikipedia.org/wiki/Global_North_and_Global_South" }
+  ]
+};
+
 const colors = {
   "Pax Silica": getCss("--alliance-pax"),
   "WAICO": getCss("--alliance-waico"),
@@ -219,6 +231,7 @@ function renderSources() {
         <h3 class="h6">${alliance.shortName}</h3>
         <ul class="mb-0 ps-3">
           ${alliance.data.sources.map((source) => `<li><a href="${source.url}">${source.title}</a></li>`).join("")}
+          ${wikipediaPages[alliance.key].map((source) => `<li><a href="${source.url}">${source.title}</a></li>`).join("")}
         </ul>
       </div>
     </div>
