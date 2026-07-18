@@ -4,14 +4,14 @@ Thank you for helping keep this dataset current.
 
 ## Good Contributions
 
-- Add or remove participating countries when a reliable public source confirms a change.
+- Add or remove participating countries when a reliable public source confirms a change in the relevant dataset scope.
 - Correct country names, ISO3 codes, notes, or source metadata.
 - Improve README documentation or website accessibility.
 - Report ambiguity, especially where a source uses a short country name such as "Congo".
 
 ## Data Update Guidelines
 
-Please keep the three alliance files in the same structure:
+Please keep the three dataset files in the same structure:
 
 - `alliance`
 - `as_of`
@@ -55,7 +55,7 @@ Run this from the repository root:
 ```bash
 python3 -m json.tool pax_silica.json >/dev/null
 python3 -m json.tool waico.json >/dev/null
-python3 -m json.tool global_south.json >/dev/null
+python3 -m json.tool ai_alliance_network.json >/dev/null
 python3 -m http.server 8080
 ```
 

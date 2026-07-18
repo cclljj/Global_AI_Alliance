@@ -1,10 +1,10 @@
 :root {
   --alliance-pax: #2563eb;
   --alliance-waico: #d97706;
-  --alliance-global-south: #16a34a;
+  --alliance-ai-network: #16a34a;
   --alliance-pax-waico: #db2777;
-  --alliance-pax-global-south: #7c3aed;
-  --alliance-waico-global-south: #0891b2;
+  --alliance-pax-ai-network: #7c3aed;
+  --alliance-waico-ai-network: #0891b2;
   --alliance-all: #111827;
   --alliance-none: #d7dee8;
 }

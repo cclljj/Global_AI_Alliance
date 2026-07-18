@@ -9,11 +9,11 @@
 [![Last Commit](https://img.shields.io/github/last-commit/cclljj/Global_AI_Alliance)](https://github.com/cclljj/Global_AI_Alliance/commits/main)
 [![Made with AI](https://img.shields.io/badge/made%20with-AI%20assistance-7c3aed)](#ai-assistance-disclosure)
 
-A source-backed dataset and map of country participation across three AI alliance groupings:
+A source-backed dataset and map of country participation across three AI cooperation groupings:
 
 - Pax Silica
 - World Artificial Intelligence Cooperation Organization (WAICO)
-- AI Alliance Network, used here as the Global South network reference
+- AI Alliance Network, used here as a Global South-oriented AI cooperation network reference
 
 The live website is published through GitHub Pages at:
 
@@ -23,7 +23,7 @@ https://cclljj.github.io/Global_AI_Alliance/
 
 - `pax_silica.json`: sovereign-country signatories to the Pax Silica Declaration
 - `waico.json`: founding-country signatories to WAICO
-- `global_south.json`: countries represented by formal AI Alliance Network member organizations
+- `ai_alliance_network.json`: countries represented by formal AI Alliance Network member organizations
 - `AI_Alliance.JPG`: archived static rendered map image
 - `index.html` and `assets/`: interactive GitHub Pages website
 
@@ -31,15 +31,15 @@ https://cclljj.github.io/Global_AI_Alliance/
 
 This project was researched, structured, written, and generated with AI assistance. AI was used to help identify public sources, organize the JSON datasets, draft documentation, and build the static website.
 
-Because alliance membership can change and AI-generated work can contain mistakes, the dataset should be treated as a source-backed working artifact rather than an official registry. Human review, source verification, corrections, and community contributions are welcome.
+Because participation can change and AI-generated work can contain mistakes, the dataset should be treated as a source-backed working artifact rather than an official registry. Human review, source verification, corrections, and community contributions are welcome.
 
 ## Methodology
 
-The datasets use ISO 3166-1 alpha-3 country codes and include source metadata. Some groupings are not equivalent in legal form:
+The datasets use ISO 3166-1 alpha-3 country codes and include source metadata. The three groupings are not equivalent in legal form:
 
 - Pax Silica is treated as formal sovereign-country signatory participation.
 - WAICO is treated as founding-country participation based on reported signatories.
-- The AI Alliance Network is not treated as an intergovernmental organization; it is represented by countries with formal member organizations listed by the network.
+- The AI Alliance Network is not treated as an intergovernmental organization or national alliance; it is represented by countries with formal member organizations listed by the network.
 
 The European Union, Taiwan, and observer organizations are documented in the data where relevant, but they are not shaded as sovereign-country members on the core map.
 

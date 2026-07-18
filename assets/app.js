@@ -4,7 +4,7 @@ import world from "https://esm.sh/@d3-maps/atlas@1.0.0/world/countries/countries
 const allianceFiles = [
   { key: "pax_silica", shortName: "Pax Silica", path: "pax_silica.json", colorKey: "pax" },
   { key: "waico", shortName: "WAICO", path: "waico.json", colorKey: "waico" },
-  { key: "global_south", shortName: "Global South network", path: "global_south.json", colorKey: "globalSouth" }
+  { key: "ai_alliance_network", shortName: "AI Alliance Network", path: "ai_alliance_network.json", colorKey: "aiAllianceNetwork" }
 ];
 
 const wikipediaPages = {
@@ -14,19 +14,19 @@ const wikipediaPages = {
   waico: [
     { title: "Wikipedia — World Artificial Intelligence Cooperation Organization", url: "https://en.wikipedia.org/wiki/World_Artificial_Intelligence_Cooperation_Organization" }
   ],
-  global_south: [
-    { title: "Wikipedia — Global North and Global South (background)", url: "https://en.wikipedia.org/wiki/Global_North_and_Global_South" }
+  ai_alliance_network: [
+    { title: "Wikipedia — Global North and Global South (context only)", url: "https://en.wikipedia.org/wiki/Global_North_and_Global_South" }
   ]
 };
 
 const colors = {
   "Pax Silica": getCss("--alliance-pax"),
   "WAICO": getCss("--alliance-waico"),
-  "Global South network": getCss("--alliance-global-south"),
+  "AI Alliance Network": getCss("--alliance-ai-network"),
   "Pax Silica + WAICO": getCss("--alliance-pax-waico"),
-  "Pax Silica + Global South network": getCss("--alliance-pax-global-south"),
-  "WAICO + Global South network": getCss("--alliance-waico-global-south"),
-  "Pax Silica + WAICO + Global South network": getCss("--alliance-all"),
+  "Pax Silica + AI Alliance Network": getCss("--alliance-pax-ai-network"),
+  "WAICO + AI Alliance Network": getCss("--alliance-waico-ai-network"),
+  "Pax Silica + WAICO + AI Alliance Network": getCss("--alliance-all"),
   "No tracked participation": getCss("--alliance-none")
 };
 
@@ -121,10 +121,10 @@ function renderLegend() {
   const trackedLabels = [
     "Pax Silica",
     "WAICO",
-    "Global South network",
+    "AI Alliance Network",
     "Pax Silica + WAICO",
-    "Pax Silica + Global South network",
-    "WAICO + Global South network"
+    "Pax Silica + AI Alliance Network",
+    "WAICO + AI Alliance Network"
   ];
 
   document.getElementById("legend").innerHTML = trackedLabels.map((label) => `
@@ -152,7 +152,7 @@ function renderMap() {
     .append("svg")
     .attr("viewBox", `0 0 ${width} ${height}`)
     .attr("role", "img")
-    .attr("aria-label", "World map showing AI alliance participation by country.");
+    .attr("aria-label", "World map showing AI cooperation participation by country.");
 
   svg.append("path")
     .datum({ type: "Sphere" })
@@ -200,9 +200,9 @@ function hideTooltip(tooltip) {
 function renderOverlaps() {
   const overlapRows = [
     overlap("Pax Silica", "WAICO"),
-    overlap("Pax Silica", "Global South network"),
-    overlap("WAICO", "Global South network"),
-    overlap("Pax Silica", "WAICO", "Global South network")
+    overlap("Pax Silica", "AI Alliance Network"),
+    overlap("WAICO", "AI Alliance Network"),
+    overlap("Pax Silica", "WAICO", "AI Alliance Network")
   ];
 
   document.getElementById("overlaps").innerHTML = overlapRows.map((row) => `
