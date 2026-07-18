@@ -1,0 +1,47 @@
+{
+  "alliance": "World Artificial Intelligence Cooperation Organization (WAICO)",
+  "as_of": "2026-07-18",
+  "membership_basis": "Founding-country signatories to the agreement establishing WAICO on 2026-07-16",
+  "country_count": 29,
+  "countries": [
+    {"name": "Algeria", "iso3": "DZA", "status": "founding member"},
+    {"name": "Belarus", "iso3": "BLR", "status": "founding member"},
+    {"name": "Brazil", "iso3": "BRA", "status": "founding member"},
+    {"name": "Cambodia", "iso3": "KHM", "status": "founding member"},
+    {"name": "Cameroon", "iso3": "CMR", "status": "founding member"},
+    {"name": "China", "iso3": "CHN", "status": "founding member"},
+    {"name": "Republic of the Congo", "iso3": "COG", "status": "founding member"},
+    {"name": "Cuba", "iso3": "CUB", "status": "founding member"},
+    {"name": "Ethiopia", "iso3": "ETH", "status": "founding member"},
+    {"name": "Indonesia", "iso3": "IDN", "status": "founding member"},
+    {"name": "Kazakhstan", "iso3": "KAZ", "status": "founding member"},
+    {"name": "Kenya", "iso3": "KEN", "status": "founding member"},
+    {"name": "Kyrgyzstan", "iso3": "KGZ", "status": "founding member"},
+    {"name": "Laos", "iso3": "LAO", "status": "founding member"},
+    {"name": "Lesotho", "iso3": "LSO", "status": "founding member"},
+    {"name": "Malaysia", "iso3": "MYS", "status": "founding member"},
+    {"name": "Mozambique", "iso3": "MOZ", "status": "founding member"},
+    {"name": "Myanmar", "iso3": "MMR", "status": "founding member"},
+    {"name": "Nicaragua", "iso3": "NIC", "status": "founding member"},
+    {"name": "Oman", "iso3": "OMN", "status": "founding member"},
+    {"name": "Pakistan", "iso3": "PAK", "status": "founding member"},
+    {"name": "Russia", "iso3": "RUS", "status": "founding member"},
+    {"name": "Senegal", "iso3": "SEN", "status": "founding member"},
+    {"name": "Serbia", "iso3": "SRB", "status": "founding member"},
+    {"name": "South Africa", "iso3": "ZAF", "status": "founding member"},
+    {"name": "Tajikistan", "iso3": "TJK", "status": "founding member"},
+    {"name": "Uzbekistan", "iso3": "UZB", "status": "founding member"},
+    {"name": "Venezuela", "iso3": "VEN", "status": "founding member"},
+    {"name": "Zambia", "iso3": "ZMB", "status": "founding member"}
+  ],
+  "notes": [
+    "WAICO was established in Shanghai on July 16, 2026.",
+    "Indonesian officials stated that founding-member registration would remain open through July 30, 2026, so the list may change after this file's as-of date.",
+    "The source list uses the name Congo. Based on naming conventions and related organizational records, this file interprets it as the Republic of the Congo (COG), not the Democratic Republic of the Congo."
+  ],
+  "sources": [
+    {"title": "Indonesia Ministry of Communication and Digital Affairs — full list of 29 WAICO founders", "url": "https://portal.komdigi.go.id/kanal-publik/berita-kini/10399", "accessed": "2026-07-18"},
+    {"title": "Xinhua — 29 countries sign agreement establishing WAICO", "url": "https://english.cctv.com/2026/07/17/ARTIh6tzdauk93A6NdYiKz6j260717.shtml", "accessed": "2026-07-18"},
+    {"title": "ANTARA — founding-member registration remains open through July 30", "url": "https://en.antaranews.com/news/423160/indonesia-joins-waico-as-founding-member-to-boost-ai-development", "accessed": "2026-07-18"}
+  ]
+}

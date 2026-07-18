@@ -1,0 +1,45 @@
+{
+  "alliance": "AI Alliance Network",
+  "as_of": "2026-07-18",
+  "membership_basis": "Countries represented by one or more member organizations on the AI Alliance Network's official member list",
+  "country_count": 22,
+  "countries": [
+    {"name": "Azerbaijan", "iso3": "AZE", "status": "represented by member organization(s)"},
+    {"name": "Bahrain", "iso3": "BHR", "status": "represented by member organization(s)"},
+    {"name": "Belarus", "iso3": "BLR", "status": "represented by member organization(s)"},
+    {"name": "Brazil", "iso3": "BRA", "status": "represented by member organization(s)"},
+    {"name": "Chile", "iso3": "CHL", "status": "represented by member organization(s)"},
+    {"name": "China", "iso3": "CHN", "status": "represented by member organization(s)"},
+    {"name": "Republic of the Congo", "iso3": "COG", "status": "represented by member organization(s)"},
+    {"name": "Cuba", "iso3": "CUB", "status": "represented by member organization(s)"},
+    {"name": "Egypt", "iso3": "EGY", "status": "represented by member organization(s)"},
+    {"name": "Ethiopia", "iso3": "ETH", "status": "represented by member organization(s)"},
+    {"name": "India", "iso3": "IND", "status": "represented by member organization(s)"},
+    {"name": "Indonesia", "iso3": "IDN", "status": "represented by member organization(s)"},
+    {"name": "Iran", "iso3": "IRN", "status": "represented by member organization(s)"},
+    {"name": "Kenya", "iso3": "KEN", "status": "represented by member organization(s)"},
+    {"name": "Morocco", "iso3": "MAR", "status": "represented by member organization(s)"},
+    {"name": "Oman", "iso3": "OMN", "status": "represented by member organization(s)"},
+    {"name": "Russia", "iso3": "RUS", "status": "represented by member organization(s)"},
+    {"name": "Serbia", "iso3": "SRB", "status": "represented by member organization(s)"},
+    {"name": "South Africa", "iso3": "ZAF", "status": "represented by member organization(s)"},
+    {"name": "Tanzania", "iso3": "TZA", "status": "represented by member organization(s)"},
+    {"name": "Türkiye", "iso3": "TUR", "status": "represented by member organization(s)"},
+    {"name": "Vietnam", "iso3": "VNM", "status": "represented by member organization(s)"}
+  ],
+  "observer_organizations_by_country": [
+    {"name": "Oman", "iso3": "OMN", "note": "also already represented among members"},
+    {"name": "Pakistan", "iso3": "PAK"},
+    {"name": "Philippines", "iso3": "PHL"}
+  ],
+  "notes": [
+    "This is not an intergovernmental organization established by national governments. It is an informal voluntary network of AI associations, universities, research organizations, and development institutions.",
+    "The country list therefore identifies countries represented by formal member organizations; it does not mean that their governments formally joined. Observer organizations are excluded from the map's core-member coloring.",
+    "The official list's Congo entry is identified as the Republic of the Congo (COG) from the location of its member organization, CARIA."
+  ],
+  "sources": [
+    {"title": "AI Alliance Network — official member and observer list", "url": "https://aianet.org/members/", "accessed": "2026-07-18"},
+    {"title": "AI Alliance Network — 2026 overview and strategic development plan", "url": "https://aianet.org/storage/1380/Concept_AI_Alliance-Network_2026.pdf", "accessed": "2026-07-18"},
+    {"title": "UN Economic Commission for Africa — AI Research Center in Congo Brazzaville", "url": "https://www.uneca.org/node/7975", "accessed": "2026-07-18"}
+  ]
+}
