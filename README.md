@@ -1,5 +1,14 @@
 # Global AI Alliance
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-live-2ea44f?logo=github)](https://cclljj.github.io/Global_AI_Alliance/)
+[![Static Site](https://img.shields.io/badge/site-static%20HTML%20%2B%20D3-2563eb)](https://github.com/cclljj/Global_AI_Alliance)
+[![Data Format](https://img.shields.io/badge/data-JSON-f59e0b)](https://github.com/cclljj/Global_AI_Alliance)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Issues](https://img.shields.io/github/issues/cclljj/Global_AI_Alliance)](https://github.com/cclljj/Global_AI_Alliance/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/cclljj/Global_AI_Alliance)](https://github.com/cclljj/Global_AI_Alliance/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/cclljj/Global_AI_Alliance)](https://github.com/cclljj/Global_AI_Alliance/commits/main)
+[![Made with AI](https://img.shields.io/badge/made%20with-AI%20assistance-7c3aed)](#ai-assistance-disclosure)
+
 A source-backed dataset and map of country participation across three AI alliance groupings:
 
 - Pax Silica
@@ -15,8 +24,14 @@ https://cclljj.github.io/Global_AI_Alliance/
 - `pax_silica.json`: sovereign-country signatories to the Pax Silica Declaration
 - `waico.json`: founding-country signatories to WAICO
 - `global_south.json`: countries represented by formal AI Alliance Network member organizations
-- `AI_Alliance.JPG`: static rendered map image
+- `AI_Alliance.JPG`: archived static rendered map image
 - `index.html` and `assets/`: interactive GitHub Pages website
+
+## AI Assistance Disclosure
+
+This project was researched, structured, written, and generated with AI assistance. AI was used to help identify public sources, organize the JSON datasets, draft documentation, and build the static website.
+
+Because alliance membership can change and AI-generated work can contain mistakes, the dataset should be treated as a source-backed working artifact rather than an official registry. Human review, source verification, corrections, and community contributions are welcome.
 
 ## Methodology
 
