@@ -1,8 +1,8 @@
 {
   "alliance": "Pax Silica",
-  "as_of": "2026-07-18",
+  "as_of": "2026-11-18",
   "membership_basis": "Sovereign-country signatories to the Pax Silica Declaration",
-  "country_count": 23,
+  "country_count": 25,
   "countries": [
     {"name": "Argentina", "iso3": "ARG", "status": "signatory"},
     {"name": "Australia", "iso3": "AUS", "status": "signatory"},
@@ -14,11 +14,13 @@
     {"name": "Greece", "iso3": "GRC", "status": "signatory"},
     {"name": "India", "iso3": "IND", "status": "signatory"},
     {"name": "Israel", "iso3": "ISR", "status": "signatory"},
+    {"name": "Italy", "iso3": "ITA", "status": "signatory"},
     {"name": "Japan", "iso3": "JPN", "status": "signatory"},
     {"name": "Kazakhstan", "iso3": "KAZ", "status": "signatory"},
     {"name": "Netherlands", "iso3": "NLD", "status": "signatory"},
     {"name": "Norway", "iso3": "NOR", "status": "signatory"},
     {"name": "Panama", "iso3": "PAN", "status": "signatory"},
+    {"name": "Paraguay", "iso3": "PRY", "status": "signatory"},
     {"name": "Philippines", "iso3": "PHL", "status": "signatory"},
     {"name": "Qatar", "iso3": "QAT", "status": "signatory"},
     {"name": "Republic of Korea", "iso3": "KOR", "status": "signatory"},
@@ -35,10 +37,11 @@
     {"name": "Taiwan", "iso3": "TWN", "status": "endorsed declaration principles through a separate joint statement"}
   ],
   "notes": [
-    "Official materials list 24 signatories: 23 sovereign countries and the European Union.",
-    "The map treats only the 23 sovereign-country signatories as formal participating countries. It does not expand the European Union into its 27 member states, and it does not count Taiwan as a formal signatory."
+    "Japan's foreign ministry lists 26 signatories: 25 countries and the European Union.",
+    "The map does not expand the European Union into its member states or count Taiwan as a formal signatory."
   ],
   "sources": [
+    {"title": "Japan Ministry of Foreign Affairs — Pax Silica signatories, November 18, 2026", "url": "https://www.mofa.go.jp/press/release/pressite_000001_02858.html", "accessed": "2026-11-18"},
     {"title": "U.S. Department of State — 2026 Pax Silica Summit deliverables (republished)", "url": "https://www.miragenews.com/pax-silica-1700308/", "accessed": "2026-07-18"},
     {"title": "European Commission signs Pax Silica declaration", "url": "https://digital-strategy.ec.europa.eu/en/news/commission-signs-pax-silica-declaration", "accessed": "2026-07-18"}
   ]

@@ -94,11 +94,12 @@ function buildCountryIndex() {
 
 function renderStatus() {
   const dates = state.datasets.map((item) => item.data.as_of);
-  const asOf = dates.every((date) => date === dates[0]) ? dates[0] : dates.join(", ");
+  const asOf = dates.every((date) => date === dates[0]) ? dates[0] : "Dates vary by dataset";
   const total = state.countries.length;
   document.getElementById("last-updated").innerHTML = `
     <div class="small text-uppercase text-secondary fw-semibold">Dataset status</div>
-    <div class="fs-5 fw-semibold">As of ${asOf}</div>
+    <div class="fs-5 fw-semibold">Last updated: 2026-11-18</div>
+    <div class="text-secondary small">${asOf}</div>
     <div class="text-secondary">${total} unique countries tracked across three datasets.</div>
   `;
 }
@@ -111,6 +112,7 @@ function renderSummary() {
         <div class="text-secondary small text-uppercase fw-semibold">${alliance.shortName}</div>
         <div class="summary-value fw-semibold my-2">${alliance.data.country_count}</div>
         <div class="text-secondary">${alliance.data.membership_basis}</div>
+        <div class="text-secondary small mt-2">Data as of: ${alliance.data.as_of}</div>
       </div>
     </div>
   `);
