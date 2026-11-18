@@ -9,7 +9,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/cclljj/Global_AI_Alliance)](https://github.com/cclljj/Global_AI_Alliance/commits/main)
 [![Made with AI](https://img.shields.io/badge/made%20with-AI%20assistance-7c3aed)](#ai-assistance-disclosure)
 
-A source-backed dataset and map of country participation across three AI cooperation groupings:
+A source-backed directory of international AI cooperation, with a country map for three selected groupings:
 
 - Pax Silica
 - World Artificial Intelligence Cooperation Organization (WAICO)
@@ -26,6 +26,8 @@ https://cclljj.github.io/Global_AI_Alliance/
 - `ai_alliance_network.json`: countries represented by formal AI Alliance Network member organizations
 - `AI_Alliance.JPG`: archived static rendered map image
 - `index.html` and `assets/`: interactive GitHub Pages website
+
+The cooperation directory also covers selected bilateral initiatives, regional cooperation, declarations, and global forums. Their participants and legal status differ; directory entries are not automatically included in the map. The directory was reviewed on 2026-11-18 and is selective rather than exhaustive.
 
 ## AI Assistance Disclosure
 

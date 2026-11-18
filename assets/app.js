@@ -62,7 +62,37 @@ async function init() {
   renderOverlaps();
   renderSources();
   renderCountryTable();
+  renderDirectory();
   document.getElementById("country-search").addEventListener("input", renderCountryTable);
+}
+
+const directory = [
+  {name:"Pax Silica", type:"Supply chains", participants:"25 country signatories and the European Union; AI infrastructure and technology supply chains.", url:"https://www.mofa.go.jp/press/release/pressite_000001_02858.html"},
+  {name:"WAICO", type:"Capacity and cooperation", participants:"37 publicly identified founding signatories; an additional reported founding signatory remains unidentified.", url:"https://southwardtech.com/waico-signatories-37-countries/"},
+  {name:"AI Alliance Network", type:"Capacity and cooperation", participants:"Voluntary network of AI organizations; representation does not imply government membership.", url:"https://aianet.org/members/"},
+  {name:"San Francisco Declaration", type:"Supply chains", participants:"Ten governments signed on 15 November 2026; a declaration distinct from Pax Silica membership.", url:"https://www.industry.gov.au/publications/san-francisco-declaration-secure-foundations-enduring-prosperity-signed-countries-attending-pax-silica-summit-15-november-2026"},
+  {name:"Sovereign Technology Alliance", type:"Research and infrastructure", participants:"Canada and Germany announced cooperation on AI and advanced technologies; wider founding membership was being developed.", url:"https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/first-meeting-of-the-co-chairs-of-the-sovereign-technology-alliance.html"},
+  {name:"Japan–India AI Cooperation Initiative", type:"Research and infrastructure", participants:"Japan and India; cooperation includes AI research, applications and talent.", url:"https://www.mofa.go.jp/files/101011766.pdf"},
+  {name:"Ibero-American AI Alliance", type:"Regional and language cooperation", participants:"A regional initiative open to voluntary accession by Ibero-American Conference member states; accession should not be assumed.", url:"https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/paginas/2026/031126-alianza-iberoamericana-ia.aspx"},
+  {name:"Nordic–Baltic digital sovereignty statement", type:"Regional and language cooperation", participants:"A joint statement by Nordic and Baltic ministers, including representatives of the Faroe Islands and Åland.", url:"https://www.norden.org/sv/declaration/common-nordic-and-baltic-approach-digital-sovereignty"},
+  {name:"Paris Call for AI Safety and Security", type:"Safety and governance", participants:"A declaration endorsed by governments, companies and civil society; the list remains open to new endorsements.", url:"https://www.elysee.fr/en/emmanuel-macron/2026/09/11/paris-call-for-ai-safety-and-security"},
+  {name:"UN Global Dialogue on AI Governance", type:"Safety and governance", participants:"A UN forum open to all Member States and other stakeholders; not a membership alliance.", url:"https://www.un.org/global-dialogue-ai-governance/en"}
+];
+
+function renderDirectory() {
+  const search = document.getElementById("directory-search");
+  const category = document.getElementById("directory-category");
+  for (const type of [...new Set(directory.map(item => item.type))]) {
+    category.add(new Option(type, type));
+  }
+  function update() {
+    const query = search.value.trim().toLowerCase();
+    const items = directory.filter(item => (!category.value || item.type === category.value) && `${item.name} ${item.type} ${item.participants}`.toLowerCase().includes(query));
+    document.getElementById("directory-table").innerHTML = items.length ? items.map(item => `<tr><td class="fw-semibold">${item.name}</td><td>${item.type}</td><td>${item.participants}</td><td><a href="${item.url}">Source</a></td></tr>`).join("") : '<tr><td colspan="4">No matching initiatives.</td></tr>';
+  }
+  search.addEventListener("input", update);
+  category.addEventListener("change", update);
+  update();
 }
 
 function buildCountryIndex() {
