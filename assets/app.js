@@ -88,7 +88,7 @@ function renderDirectory() {
   function update() {
     const query = search.value.trim().toLowerCase();
     const items = directory.filter(item => (!category.value || item.type === category.value) && `${item.name} ${item.type} ${item.participants}`.toLowerCase().includes(query));
-    document.getElementById("directory-table").innerHTML = items.length ? items.map(item => `<tr><td class="fw-semibold">${item.name}</td><td>${item.type}</td><td>${item.participants}</td><td><a href="${item.url}">Source</a></td></tr>`).join("") : '<tr><td colspan="4">No matching initiatives.</td></tr>';
+    document.getElementById("directory-table").innerHTML = items.length ? items.map(item => `<tr><td class="fw-semibold" data-label="Initiative">${item.name}</td><td data-label="Type">${item.type}</td><td data-label="Participants and scope">${item.participants}</td><td data-label="Source"><a href="${item.url}" aria-label="Source for ${item.name}">View source</a></td></tr>`).join("") : '<tr><td colspan="4">No matching initiatives.</td></tr>';
   }
   search.addEventListener("input", update);
   category.addEventListener("change", update);

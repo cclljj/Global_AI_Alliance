@@ -60,7 +60,6 @@ a {
 }
 
 .map-canvas {
-  min-height: 520px;
   position: relative;
 }
 
@@ -149,8 +148,29 @@ a {
 }
 
 @media (max-width: 767.98px) {
-  .map-canvas {
-    min-height: 340px;
+  .directory-table thead {
+    display: none;
+  }
+
+  .directory-table, .directory-table tbody, .directory-table tr, .directory-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .directory-table tr {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .directory-table td {
+    border: 0;
+    padding: 0.2rem 0;
+    overflow-wrap: anywhere;
+  }
+
+  .directory-table td[data-label="Type"] {
+    color: #526071;
+    font-size: 0.875rem;
   }
 
   .search-input {
